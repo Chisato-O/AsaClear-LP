@@ -49,7 +49,7 @@ export default function AsaClearLandingPage() {
             <img
               src="/logo.png"
               alt="AsaClear logo"
-              className="h-8 w-8 rounded-2xl bg-white p-0.8 shadow-sm"
+              className="h-11 w-11 rounded-2xl bg-white p-1.0 shadow-sm"
             />
             <div>
               <p className="text-lg font-semibold tracking-tight text-[#F16813]">AsaClear</p>
@@ -59,12 +59,12 @@ export default function AsaClearLandingPage() {
 
           <div className="mt-8 rounded-[28px] bg-white/78 p-6 shadow-sm ring-1 ring-black/5 backdrop-blur">
             <p className="text-sm font-medium text-[#F16813]">What we are building</p>
-            <h1 className="mt-3 text-[34px] font-bold leading-[1.12] tracking-tight">
+            <h1 className="mt-3 text-[30px] font-bold leading-[1.12] tracking-tight">
               飲み会中の小さな行動で、
               <span className="block text-[#F16813]">翌朝の満足感までつなぐ。</span>
             </h1>
             <p className="mt-5 text-[15px] leading-7 text-[#2F2F2F]/76">
-              AsaClearは、飲酒中の判断不能を補い、満足感を翌朝まで保つ、感情にフォーカスした体験づくりに取り組んでいます。
+              AsaClearは、飲酒中の行動判断を補い、楽しい飲み会の満足感を翌朝まで保つ、感情にフォーカスした体験づくりに取り組んでいます。
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function AsaClearLandingPage() {
             <span className="text-[#F5A36C]">体調ではなく感情の落差。</span>
           </h2>
           <p className="mt-4 text-[15px] leading-7 text-white/78">
-            楽しさから後悔へ一転する、その間にある意思決定の問題に向き合いたい。これがAsaClearの出発点です。
+            楽しさから後悔へ一転する、その間の小さな行動をとる意思に向き合いたい。これがAsaClearの出発点です。
           </p>
         </div>
       </section>
