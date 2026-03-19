@@ -49,7 +49,7 @@ export default function AsaClearLandingPage() {
             <img
               src="/logo.png"
               alt="AsaClear logo"
-              className="h-6 w-6 rounded-2xl bg-white p-0.8 shadow-sm"
+              className="h-8 w-8 rounded-2xl bg-white p-0.8 shadow-sm"
             />
             <div>
               <p className="text-lg font-semibold tracking-tight text-[#F16813]">AsaClear</p>
