@@ -61,9 +61,9 @@ export default function AsaClearLandingPage() {
             <p className="text-sm font-medium text-[#F16813]">What we are building</p>
             <h1 className="mt-3 text-[25px] font-bold leading-[1.12] tracking-tight">
               飲み会中の小さな行動で、
-              <span className="block text-[#F16813]">翌朝の満足感までつなぐ。</span>
+              <span className="block text-[#F16813]">翌朝まで満足感を。</span>
             </h1>
-            <p className="mt-5 text-[15px] leading-7 text-[#2F2F2F]/76">
+            <p className="mt-3 text-[15px] leading-7 text-[#2F2F2F]/76">
               AsaClearは、飲酒中の行動判断を補い、楽しい飲み会の満足感を翌朝まで保つ、感情にフォーカスした体験づくりに取り組んでいます。
             </p>
           </div>
