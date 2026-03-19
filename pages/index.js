@@ -70,21 +70,27 @@ export default function AsaClearLandingPage() {
         </div>
       </section>
 
-      <section className="px-5 pt-2">
+<section className="px-5 pt-2">
         <div className="mx-auto max-w-md">
           <div className="mb-3 flex items-center justify-between">
             <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">APP MOCK</p>
-            <p className="text-xs text-[#2F2F2F]/45">あとで画像を差し替え</p>
           </div>
 
           <div className="flex snap-x gap-4 overflow-x-auto pb-2">
-            {appFrames.map((frame) => (
+            {["mock1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
               <div
-                key={frame}
+                key={index}
                 className="flex min-w-[220px] snap-start flex-col items-center justify-center rounded-[28px] border border-black/5 bg-white/70 px-4 py-8 text-center shadow-sm"
               >
-                <div className="flex h-[420px] w-full items-center justify-center rounded-[24px] border border-dashed border-black/10 bg-[#FBF6F0] text-sm text-[#2F2F2F]/38">
-                  app image {frame}
+                <div className="relative h-[420px] w-full overflow-hidden rounded-[24px]">
+                  <img
+                    src={`/${fileName}`}
+                    alt={`App Mock ${index + 1}`}
+                    className="h-full w-full object-cover"
+                    onError={(e) => {
+                      e.target.src = "https://via.placeholder.com/220x420?text=Image+Not+Found";
+                    }}
+                  />
                 </div>
               </div>
             ))}
