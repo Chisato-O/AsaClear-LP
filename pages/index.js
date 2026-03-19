@@ -82,11 +82,10 @@ export default function AsaClearLandingPage() {
               <div
                 key={index}
                 className="flex min-w-[220px] snap-start flex-col rounded-[28px] border border-black/5 bg-white/70 shadow-sm overflow-hidden" 
-                <div className="relative h-[420px] w-full"> 
                   <img
                     src={`/${fileName}`}
                     alt={`App Mock ${index + 1}`}
-                    className="h-full w-full object-cover" 
+                    className="block w-full h-auto" 
                     onError={(e) => {
                       e.target.src = "https://via.placeholder.com/220x420?text=Image+Not+Found";
                     }}
