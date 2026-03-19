@@ -9,10 +9,11 @@
     "react": "latest",
     "react-dom": "latest",
     "next": "latest",
-    "lucide-react": "latest"
+    "lucide-react": "latest",
+    "tailwindcss": "latest",
+    "@tailwindcss/postcss": "latest"
   },
   "devDependencies": {
-    "tailwindcss": "latest",
     "postcss": "latest",
     "autoprefixer": "latest"
   }
