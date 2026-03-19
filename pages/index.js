@@ -1,5 +1,5 @@
 export default function AsaClearLandingPage() {
-  const appFrames = [1, 2, 3];
+  const appFrames = ["mock1.png", "mock2.png", "mock3.png"];
 
   const themes = [
     {
