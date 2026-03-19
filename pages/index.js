@@ -71,33 +71,22 @@ export default function AsaClearLandingPage() {
       </section>
 
               
-     <section className="px-5 pt-2">
+      <section className="px-5 pt-10">
         <div className="mx-auto max-w-md">
-          <div className="mb-3 flex items-center justify-between">
-            <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">APP MOCK</p>
-          </div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">ABOUT</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight">どんなことに取り組んでいるのか</h2>
 
-          <div className="flex snap-x gap-4 overflow-x-auto pb-2">
-            {["mock1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
-              <div
-                key={index}
-                className="flex min-w-[220px] snap-start flex-col rounded-[28px] border border-black/5 bg-white/70 shadow-sm overflow-hidden" 
-                  <img
-                    src={`/${fileName}`}
-                    alt={`App Mock ${index + 1}`}
-                    className="block w-full h-auto" 
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/220x420?text=Image+Not+Found";
-                    }}
-                  />
-                </div>
+          <div className="mt-5 space-y-4">
+            {themes.map((item) => (
+              <div key={item.title} className="rounded-[24px] bg-white px-5 py-5 shadow-sm ring-1 ring-black/5">
+                <p className="text-sm font-semibold text-[#F16813]">{item.title}</p>
+                <p className="mt-3 text-[15px] leading-7 text-[#2F2F2F]/78">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-              
       <section className="px-5 pt-10">
         <div className="mx-auto max-w-md rounded-[28px] bg-[#2F2F2F] px-5 py-6 text-white shadow-lg">
           <p className="text-xs font-semibold tracking-[0.16em] text-[#3BAFDA]">INSIGHT</p>
