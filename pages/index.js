@@ -59,7 +59,7 @@ export default function AsaClearLandingPage() {
 
           <div className="mt-8 rounded-[28px] bg-white/78 p-6 shadow-sm ring-1 ring-black/5 backdrop-blur">
             <p className="text-sm font-medium text-[#F16813]">What we are building</p>
-            <h1 className="mt-3 text-[28px] font-bold leading-[1.12] tracking-tight">
+            <h1 className="mt-3 text-[25px] font-bold leading-[1.12] tracking-tight">
               飲み会中の小さな行動で、
               <span className="block text-[#F16813]">翌朝の満足感までつなぐ。</span>
             </h1>
