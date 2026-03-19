@@ -78,7 +78,7 @@ export default function AsaClearLandingPage() {
           </div>
 
           <div className="flex snap-x gap-4 overflow-x-auto pb-2">
-            {["image_1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
+            {["mock1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
               <div
                 key={index}
                 className="flex min-w-[220px] snap-start flex-col rounded-[28px] border border-black/5 bg-white/70 shadow-sm overflow-hidden" 
