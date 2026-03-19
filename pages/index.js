@@ -70,35 +70,6 @@ export default function AsaClearLandingPage() {
         </div>
       </section>
 
-<section className="px-5 pt-2">
-        <div className="mx-auto max-w-md">
-          <div className="mb-3 flex items-center justify-between">
-            <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">APP MOCK</p>
-          </div>
-
-          <div className="flex snap-x gap-4 overflow-x-auto pb-2">
-            {/* 画像の配列を直接定義 */}
-            {["image_1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
-              <div
-                key={index}
-                className="flex min-w-[220px] snap-start flex-col rounded-[28px] border border-black/5 bg-white/70 shadow-sm overflow-hidden" // 修正箇所：余白をなくし、items-centerを削除。overflow-hiddenを追加。
-              >
-                {/* 画像コンテナ */}
-                <div className="relative h-[420px] w-full"> {/* 修正箇所：点線枠を削除 */}
-                  <img
-                    src={`/${fileName}`}
-                    alt={`App Mock ${index + 1}`}
-                    className="h-full w-full object-contain" // 修正箇所：object-contain でコンテナ内に画像を収める
-                    onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/220x420?text=Image+Not+Found";
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
               
       <section className="px-5 pt-10">
         <div className="mx-auto max-w-md">
@@ -129,6 +100,7 @@ export default function AsaClearLandingPage() {
         </div>
       </section>
 
+              
       <section className="px-5 pt-10">
         <div className="mx-auto max-w-md">
           <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">DIFFERENCE</p>
