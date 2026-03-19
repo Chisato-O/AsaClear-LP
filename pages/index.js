@@ -76,17 +76,17 @@ export default function AsaClearLandingPage() {
             <p className="text-xs font-semibold tracking-[0.16em] text-[#F16813]">APP MOCK</p>
           </div>
 
-          <div className="flex snap-x gap-4 overflow-x-auto pb-2">
+          <div className="flex snap-x gap-4 overflow-x-auto pb-4">
             {["mock1.png", "mock2.png", "mock3.png"].map((fileName, index) => (
               <div
                 key={index}
-                className="flex min-w-[220px] snap-start flex-col items-center justify-center rounded-[28px] border border-black/5 bg-white/70 px-4 py-8 text-center shadow-sm"
+                className="flex min-w-[260px] snap-start flex-col items-center justify-center rounded-[28px] border border-black/5 bg-white shadow-sm overflow-hidden"
               >
-                <div className="relative h-[420px] w-full overflow-hidden rounded-[24px]">
+                <div className="w-full">
                   <img
                     src={`/${fileName}`}
                     alt={`App Mock ${index + 1}`}
-                    className="h-full w-full object-cover"
+                    className="block w-full h-auto"
                     onError={(e) => {
                       e.target.src = "https://via.placeholder.com/220x420?text=Image+Not+Found";
                     }}
